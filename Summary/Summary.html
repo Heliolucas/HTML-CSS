@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="shortcut icon" href="imagens/Livro.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Summary</title>
+</head>
+<body>
+        <header>
+            <h1 id="tituloinicial">Summary-Curso em Video</h1>
+        </header>
+        <nav>
+            <a href="#">INICIO</a>
+            <a href="#">NOTAS</a>
+            <a href="#">REDES SOCIAIS</a>
+        </nav>
+        
+<code>
+            <main>
+                <h2 id="titulosegundo">PRINCIPAIS FORMATAÇÕES DE HELIDROPY</h1>
+                <h2>Negrito</h2>
+                <p>Para colocar frases em <strong>negrito</strong> (não semantico) usa a tag (b) e semantica é (strong)</p>
+                <h2>Italico</h2>
+                <p>Para colocar frases em <EM>Italico</EM> (não semantico) usa a tag (i) e semantica é (em)</p>
+                <h2>Marca Texto</h2>
+                <p>Para colocar frases em <mark>destaque</mark> usa a tag (mark)</p>
+                <h2>Texto Deletado</h2>
+                <p>texto <del>excluido</del> com essas tag del</p>
+                <h2>Texto Inserido</h2>
+                <p>Texto <ins>Inserido</ins> essa tag é semantica ins</p>
+                <h2>Texto Sup e sub escrito</h2>
+                <p>texto sup escrito x <sup>20</sup> +3</p>
+                <p>texto sub escrito x <sub>10</sub>+3</p>
+                
+                <h1>Outras Formataçôes</h1>
+                <p>Codigo-fonte = Manter Quebra de Linhas usa a tag 'pre'</p>
+                <p>Pre-formatação = fomata texto usa code</p>
+                <p>&lt; mostrar '<' &gt; mostrar '>'</p>
+                
+                <h1>Citacões</h1>
+                <p>Usa-se tag 'abbr' para deixar o mause em cima do texto e mostrar o significado ex:titulo</p>
+                
+                <h1>Trabalhando com Listas</h1>
+                <h2>Listas Ordenadas</h2>
+                <p>Usa-se a tag "ol" e dentro usa-se "li",usando o 'type' dentro do 'ol',voce pode mudar a classificão</p>
+                <ol type="I">
+                    <li>Estudar Programação</li>
+                </ol>
+                <h2>Listas Não Ordenadas</h2>
+                Usa-se a tag "ul" e dentro usa-se "li",usando o 'type' dentro do 'ul',voce pode mudar a classificão</p>
+                <ul type="circle"> <!--circle,square,disc -->
+                    <li>Study Programm</li>
+                </ul>
+                <h2>Exemplos de Listas</h2>
+                <ul>
+                    <li>Morning</li>
+                    <ol>
+                        <li>Wake up</li>
+                    </ol>
+                    <li>Afternoon</li>
+                    <ol start="2">
+                        <li>sleep</li>
+                    </ol>
+                </ul>
+                <h1> Links </h1>
+                <h2> Links externos</h2>
+                <p> Usa-se a tag "a" > a href="o link do site">nome que mostrar no site</a>
+                para abrir 2 abas no google usa-se <mark>target="_black" rel="external"</mark> depois do link</p>
+                <h2>Links internos</h2>
+                <p>Mesma tag 'a' mas dentro do "href" clica crtl + alt e coloca a sua segunda pag ja criar no html </p>
+                <p>usa-se "rel" para ajudar o google a direcionar a sua pagina <mark>ex:next,prev,external e unfollow para patrocinio</mark></p>
+                <p>obs:Caso não apareça arquivo do site no link, usa " ../", ele serve para voltar a pasta</p>
+                
+                <h2>Imagens Dinamicas</h2>
+                <p>Usa-se a tag 'picture' para avisar ao google que vem imagens e dentro vc abrir a tag 'img' com o primeiro tamanho de imagem 'sempre tem que ser em ordem de tamanho'
+                    e depois usa a tag 'source media="(min-width: )" srcset="nome da proxima imagem" type="image/ e tipo da imagem ex:png"', source media="(min-width: )" voce colocar no max e o tamanho da primeira img
+                </p>
+                    <picture>
+                        <source media="(max-width:750px )" srcset="imagens/p.png" type="image/png">
+                        <source media="(max-width:1050px )" srcset="imagens/m.png" type="image/png">
+                        <img src="imagens/p.png" alt="Imagem Flexivel" width="100px">
+                    </picture>
+                <h2>Audio no Site</h2>
+                <p>usa-se a tag audio,usar preload=metadata para nao carregar tudo,autoplay,controls e loop
+                <audio>
+                    <source src="nome da musica.mp3" type="audio/mpeg">
+                    <source src="nome da musica.wav" type="audio/wav">
+                    <source src="nome da musica.ogg" type="audio/ogg">
+                </audio></p>
+                <h2>Videos Hospedados no Site</h2>
+                <p>usa-se tag video</p>
+                <video> <!--poster para colocar thumbnail -->
+                    <source src="nome.mp4" type="">
+                    <source src="nome.m4v" type="">
+                    <source src="nome.webm" type="">
+                    <source src="nome.obv" type="">
+                </video>
+                
+                <h2>Videos Externos do Site</h2>
+                <p>Ir no youtuber e clicar em compartilhar e em incorporar e copiar e colar tudo no vscode sem tag</p>
+                <h1>Tipos de Fonts Baixadas</h1>
+                <p>Usa-se o @font-face    types:otf - opentype, ttf - truetype
+                    @font-face {
+                    font-family: 'nome da font' ;
+                    src: url(local da font) format('tipo de formato, 3 ultimas letras');
+                }</p>
+                 <h2>Pseudo-classes</h2>
+                <p>Esse ':' depois do nome no css, ele serve para da funções, Ex a baixo: div:hover{color: red} , para acessar dentro da div usar '>' div > p:hover{color: red}  </p>
+                <div>Helio Lucas <p>HELIO PROGRAMADOR</p> </div>
+                <h3>Pseudo-Elementos</h3>
+                <p>Usar 2 vezes '::' para fazer a pseudo elementos agir antes ou depois do nome Ex: a::before{} ou a::after{}</p>
+            </main>
+            <footer>
+                <p>RESUMO FEITO PARA ESTUDO DE HELIDROPY</p>
+            </footer>
+</code>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nabla&display=swap');
+*{  padding: 0px;
+    margin: 0px; }
+
+:root {
+    --cor1: #D6D58E;
+    --cor2: #015958;
+    --cor3: #C7FFED;
+}
+
+body {
+background-color: #C7FFED;
+}
+header{
+    background-color: var(--cor2);
+    min-height: 100px;
+    padding-top: 20px;
+}
+header h1#tituloinicial {
+    text-align: center;
+    font-family: 'Nabla', cursive;
+    text-decoration: none;
+    padding: 10px;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.411);
+}
+nav{
+    background-color: #015958;
+    padding: 10px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.8s;
+}
+nav a:hover{
+    background-color: #D6D58E;
+}
+#titulosegundo{
+    text-align: center;
+    padding-bottom: 20px;
+}
+main{
+    background-color: white;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.432);
+}
+footer{
+    text-align: center;
+    background-color: var(--cor2);
+    color: rgb(255, 255, 255);
+    
+}
+        
+div > p {display: none;}
+div:hover > p {
+display: block; 
+color: rgb(0, 4, 255); }
