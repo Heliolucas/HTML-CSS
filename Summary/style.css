@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nabla&display=swap');
-*{  padding: 0px;
-    margin: 0px; }
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+*{ padding: 0px;
+   margin: 0px; }
 
 :root {
     --cor1: #D6D58E;
     --cor2: #015958;
     --cor3: #C7FFED;
+    --fonte2: 'Sriracha', cursive;
 }
 
 body {
 background-color: #C7FFED;
-background-image: url(imagens/922574.jpg);
+background-image: url(imagens/Back.jpg);
 background-size: cover;
 background-attachment: fixed;
 }
@@ -24,11 +26,13 @@ header h1#tituloinicial {
     font-family: 'Nabla', cursive;
     text-decoration: none;
     padding: 10px;
+    font-size: 6vh;
     text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.822);
 }
 nav{
     background-color: #015958;
     padding: 10px;
+    font-family: var(--fonte2);
 }
 nav a{
     color: white;
@@ -38,11 +42,11 @@ nav a{
     transition: 0.8s;
 }
 nav a:hover{
-    background-color: #D6D58E;
+    color: #FFD621;
 }
-#titulosegundo{
+main > h1{
     text-align: center;
-    padding-bottom: 20px;
+    background-color: #FFD621;
 }
 main{
     background-color: white;
@@ -59,10 +63,4 @@ footer{
     text-align: center;
     background-color: var(--cor2);
     color: rgb(255, 255, 255);
-    
 }
-        
-div > p {display: none;}
-div:hover > p {
-display: block; 
-color: rgb(0, 4, 255); }
