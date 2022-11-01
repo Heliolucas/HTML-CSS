@@ -13,7 +13,7 @@
 
 body {
 background-color: #C7FFED;
-background-image: url(imagens/Back.jpg);
+background-image: url(../imagens/Back.jpg);
 background-size: cover;
 background-attachment: fixed;
 }
@@ -42,7 +42,7 @@ nav a:hover{
 #titulo{
     font-family: 'Nabla', cursive;
     text-align: center;
-    font-size: 7vh;
+    font-size: 5vh;
     line-height: 55px;
     text-shadow: 0px 0px 5px rgba(12, 5, 5, 0.582);
     padding-bottom: 13px;
