@@ -37,26 +37,51 @@ header a , footer a{
 header a:hover , footer a:hover{
     text-decoration: underline;
 }
+#milton{
+    font-weight: bolder;
+}
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte2);
-    font-size: 3.5vw;
+    font-size: 3.5vh;
+}
+section > p {
+    padding-bottom: 2em;
 }
 section.normal{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: black;
 }
 section.imagem{
-    background-color: rgb(88, 86, 86);
-    color: white;
+    background-color: rgb(255, 255, 255);
 }
-section.imagem > p {
+section.imagem1 > p {
     display: inline-block;
     padding: 6px;
-    background-color: rgba(48, 46, 46, 0.432);
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(255, 255, 255, 0.137);
+    color: rgb(255, 255, 255);
+}
+section.imagem2 > p {
+    display: inline-block;
+    padding: 10px;
+    text-shadow: 1px 1px 1px black;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.158);
+}
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center right;
+ }
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-attachment: fixed;
+    background-size: cover;
 }
 footer{
     background-color: black;
@@ -64,6 +89,8 @@ footer{
     text-align: center;
     padding: 5px;
 }
-#milton{
-    font-weight: bolder;
+footer > p {
+    font-family: var(--fonte2);
+    font-size: 16px;
+    font-variant: small-caps;
 }
