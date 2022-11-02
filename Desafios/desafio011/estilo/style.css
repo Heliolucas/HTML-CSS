@@ -12,14 +12,15 @@
 }
 
 html, body{
-    min-height: 100vh;
-    background-color: darkgray;
+    min-height: 100vh; 
     font-family: var(--fonte1);
 }
 header{
     background-color: black;
     color: white;
     text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    box-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 header > h1{
     padding-top: 50px;
@@ -87,10 +88,14 @@ footer{
     background-color: black;
     color: white;
     text-align: center;
-    padding: 5px;
+    padding: 3px;
+    border-radius: 40px 40px 0px 0px;
 }
 footer > p {
     font-family: var(--fonte2);
     font-size: 16px;
     font-variant: small-caps;
+}
+footer > p:hover{
+    color: goldenrod;
 }
