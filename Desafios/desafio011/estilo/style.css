@@ -19,7 +19,6 @@ header{
     background-color: black;
     color: white;
     text-align: center;
-    border-radius: 0px 0px 40px 40px;
     box-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 header > h1{
