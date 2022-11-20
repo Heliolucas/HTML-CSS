@@ -78,41 +78,53 @@
                 <p>obs:Caso não apareça arquivo do site no link, usa " ../", ele serve para voltar a pasta</p>
                 
                 <h2>Imagens Dinamicas</h2>
-                <p>Usa-se a tag 'picture' para avisar ao google que vem imagens e dentro vc abrir a tag 'img' com o primeiro tamanho de imagem 'sempre tem que ser em ordem de tamanho'
-                    e depois usa a tag 'source media="(min-width: )" srcset="nome da proxima imagem" type="image/ e tipo da imagem ex:png"', source media="(min-width: )" voce colocar no max e o tamanho da primeira img
+                <p><mark>Max-width:750px:</mark>Diminuir ate 750px de tamanho da tela, ela vai ficar com essa imagem, menor que isso vai para outra imagem
                 </p>
-                    <picture>
-                        <source media="(max-width:750px )" srcset="imagens/p.png" type="image/png">
-                        <source media="(max-width:1050px )" srcset="imagens/m.png" type="image/png">
-                        <img src="imagens/p.png" alt="Imagem Flexivel" width="100px">
-                    </picture>
+                    <p>
+    <pre>
+    picture
+        source media="(max-width:750px )" srcset="imagens/p.png" type="image/png"
+        source media="(max-width:1050px )" srcset="imagens/m.png" type="image/png"
+        img src="imagens/p.png" alt="Imagem Flexivel" width="100px"
+    picture
+    </pre>
+                    </p>
+                    
                 <h2>Audio no Site</h2>
-                <p>usa-se a tag audio,usar preload=metadata para nao carregar tudo,autoplay,controls e loop
-                <audio>
-                    <source src="nome da musica.mp3" type="audio/mpeg">
-                    <source src="nome da musica.wav" type="audio/wav">
-                    <source src="nome da musica.ogg" type="audio/ogg">
-                </audio></p>
+                <p>Usa a tag audio,usar preload=metadata para nao carregar tudo,autoplay,controls e loop
+    <pre>
+    audio
+        source src="nome da musica.mp3" type="audio/mpeg"
+        source src="nome da musica.wav" type="audio/wav"
+        source src="nome da musica.ogg" type="audio/ogg"
+    audio
+    </pre>
+</p>
                 <br>
                 <h2>Videos Hospedados no Site</h2>
                 <p>usa-se tag video</p>
-                <!-- <video> poster para colocar thumbnail 
-                    <source src="nome.mp4" type="">
-                    <source src="nome.m4v" type="">
-                    <source src="nome.webm" type="">
-                    <source src="nome.obv" type="">
-                </video>-->
+                <p>
+<pre>
+    video
+        source src="nome.mp4" type=""
+        source src="nome.m4v" type=""
+        source src="nome.webm" type=""
+        source src="nome.obv" type=""
+    video
+</pre>
+                </p>
                 
                 <h2>Videos Externos do Site</h2>
-                <p>Ir no youtuber e clicar em compartilhar e em incorporar e copiar e colar tudo no vscode sem tag</p>
-                <br>
-                
-                <h1 class="h1">Tipos de Fonts Baixadas</h1>
+                <p>Clica no video e clica em compartilhar, depois clicar em incorporar e vai vim em iframe</p>
+                <h2>fonts Externas</h2>
                 <p>Usa-se o @font-face    types:otf - opentype, ttf - truetype
                     @font-face {
                     font-family: 'nome da font' ;
                     src: url(local da font) format('tipo de formato, 3 ultimas letras');
                 }</p>
+                <br>
+                
+                <h1 class="h1">Pseudos</h1>
                 <h3>Pseudo-Classes</h3>
                 <p>Esse ':' depois do nome no css, ele serve para da funções, Ex a baixo: div:hover{color: red} , para acessar dentro da div usar '>' div > p:hover{color: red}  </p>
                 <h3>Pseudo-Elementos</h3>
@@ -120,7 +132,7 @@
 
                 <h3>ShortHand</h3>
                 <p>Resumo de background: color url() position repeat attachment;
-                   Background-size(size nao fuciona dentro desse resumo de Linhas)
+                   Background-size(size não fuciona dentro desse resumo de Linhas)
                 </p>
             </main>
             <footer>
