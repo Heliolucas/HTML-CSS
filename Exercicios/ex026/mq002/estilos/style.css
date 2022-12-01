@@ -10,7 +10,9 @@ html, body {
     height: 100vh;
     width: 100vw;
     background-color: #233EFF;
+    background-repeat: no-repeat;
 }
+
 h1{
     color: white;
     padding: 20px;
